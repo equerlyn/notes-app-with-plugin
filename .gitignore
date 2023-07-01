@@ -1,3 +1,6 @@
 node_modules
-notesPlugin
-
+notes-api-web-server.pem
+src/notesPlugin.js
+notes.txt
+.env
+.prod.env
