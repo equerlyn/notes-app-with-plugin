@@ -1,6 +1,5 @@
 const ClientError = require('../../exceptions/ClientError');
 
-/* eslint-disable no-underscore-dangle */
 class CollaborationsHandler {
   constructor(collaborationsService, notesService, validator) {
     this._collaborationsService = collaborationsService;

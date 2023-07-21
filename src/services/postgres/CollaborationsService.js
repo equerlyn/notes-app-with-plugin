@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 const { Pool } = require('pg');
 const { nanoid } = require('nanoid');
 const InvariantError = require('../../exceptions/InvariantError');
@@ -21,8 +20,7 @@ class CollaborationsService {
     if (!result.rows.length) {
       throw new InvariantError('Kolaborasi gagal ditambahkan');
     }
-
-    return result.rows[0].id; // untuk kebutuhan testing
+    return result.rows[0].id;
   }
 
   async deleteCollaboration(noteId, userId) {
@@ -30,6 +28,7 @@ class CollaborationsService {
       text: 'DELETE FROM collaborations WHERE note_id = $1 AND user_id = $2 RETURNING id',
       values: [noteId, userId],
     };
+
     const result = await this._pool.query(query);
 
     if (!result.rows.length) {
