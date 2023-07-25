@@ -6,3 +6,5 @@ notes.txt
 .prod.env
 Notes API Test.postman_environment.json
 src/api/uploads/file
+multipart.txt
+redis.txt
