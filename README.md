@@ -1,5 +1,30 @@
-folder api digunakan untuk menampung banyak folder yang merupakan Hapi plugin. Untuk kebutuhan saat ini, kita cukup membuat satu plugin saja, yakni notes.
+# NOTES-APP-WITH-PLUGIN
 
-Di dalam setiap folder plugin (contohnya notes) akan terdiri dari tiga buah berkas JavaScript, yakni handler.js, index.js, dan routes.js.
+Welcome to NOTES-APP-WITH-PLUGIN! This repository from Dicoding Back-End Fundamental Class.
 
-Berkas index.js merupakan tempat di mana kita membuat plugin Hapi itu sendiri. Lalu bagaimana dengan routes.js dan handler.js? Tentu Anda sudah tahu fungsinya kan? Yap! Keduanya digunakan untuk mendefinisikan route /notes (routes.js) dan menampung function handler pada route /notes (handler.js). Kedua berkas tersebut (routes.js dan handler.js) tentu akan digunakan oleh berkas index.js.
+## Getting Started
+
+Follow these steps to get the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine. You can download them from [Node.js website](https://nodejs.org/).
+
+### Installation
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+2. Navigate to the project directory:
+   ```bash
+   cd your-repository
+3. Install project dependencies:
+   ```bash
+   npm i
+
+### Running the Application
+Now that you have installed the dependencies, you can run the application using the following command:
+```bash
+npm run start
+```
+This will start the development server, and you can view the application in your web browser at http://localhost:3000.
